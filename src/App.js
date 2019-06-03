@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function App(props) {
-  const [hue, updateHue] = useState(50)
+  const [hue, updateHue] = useState(180)
   const [saturation, updateSaturation] = useState(50)
   const [lightness, updateLightness] = useState(50)
 
@@ -23,39 +23,41 @@ export default function App(props) {
         }}
       >
         <h1>Colors are Fun!</h1>
-        <div>
-          <input
-            value={hue}
-            onValueChange={e => updateHue(e.target.value)}
-            onChange={e => updateHue(e.target.value)}
-            type="range"
-            min="0"
-            max="360"
-          />
-          <label for="hue">Hue</label>
-        </div>
-        <div>
-          <input
-            value={saturation}
-            onValueChange={e => updateSaturation(e.target.value)}
-            onChange={e => updateSaturation(e.target.value)}
-            type="range"
-            min="0"
-            max="100"
-          />
-          <label for="hue">Saturation</label>
-        </div>
-        <div>
-          <input
-            value={lightness}
-            onValueChange={e => updateLightness(e.target.value)}
-            onChange={e => updateLightness(e.target.value)}
-            type="range"
-            min="0"
-            max="100"
-          />
-          <label for="hue">Lightness</label>
-        </div>
+        <section class="slider-box">
+          <div>
+            <input
+              value={hue}
+              onValueChange={e => updateHue(e.target.value)}
+              onChange={e => updateHue(e.target.value)}
+              type="range"
+              min="0"
+              max="360"
+            />
+            <label for="hue">H</label>
+          </div>
+          <div>
+            <input
+              value={saturation}
+              onValueChange={e => updateSaturation(e.target.value)}
+              onChange={e => updateSaturation(e.target.value)}
+              type="range"
+              min="0"
+              max="100"
+            />
+            <label for="hue">S</label>
+          </div>
+          <div>
+            <input
+              value={lightness}
+              onValueChange={e => updateLightness(e.target.value)}
+              onChange={e => updateLightness(e.target.value)}
+              type="range"
+              min="0"
+              max="100"
+            />
+            <label for="hue">L</label>
+          </div>
+        </section>
         <h1>
           HSL:{hue}/{saturation}%/
           {lightness}%
