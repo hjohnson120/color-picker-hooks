@@ -4,17 +4,17 @@ export default function App(props) {
   const [hue, updateHue] = useState(50)
   const [saturation, updateSaturation] = useState(50)
   const [lightness, updateLightness] = useState(50)
+
   console.log({ lightness })
   console.log({ saturation })
   console.log({ hue })
 
-  // randomColor = () => {
-  //   ;(updateHue = Math.ceil(Math.random() * 360)),
-  //     (updateSaturation = Math.ceil(Math.random() * 100)),
-  //     (updateLightness = Math.ceil(Math.random() * 100))
-  // }
-  // console.log({ randomColor })
-
+  const randomColor = () => {
+    updateHue(Math.ceil(Math.random() * 360))
+    updateSaturation(Math.ceil(Math.random() * 100))
+    updateLightness(Math.ceil(Math.random() * 100))
+  }
+  console.log({ randomColor })
   return (
     <>
       <main
@@ -41,7 +41,7 @@ export default function App(props) {
             onChange={e => updateSaturation(e.target.value)}
             type="range"
             min="0"
-            max="360"
+            max="100"
           />
           <label for="hue">Saturation</label>
         </div>
@@ -61,7 +61,7 @@ export default function App(props) {
           {lightness}%
         </h1>
         <p>New Random Color Button</p>
-        {/* <button onClick={this.randomColor}>Select </button> */}
+        <button onClick={randomColor}>Select </button>
       </main>
     </>
   )
