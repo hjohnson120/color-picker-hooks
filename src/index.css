@@ -49,10 +49,57 @@ button {
   border-radius: 50%;
 }
 
-/* .slider-box {
-  border-width: 2px;
-  border: solid;
-  border-color: black;
-  margin-left: 35%;
-  margin-right: 35%;
-} */
+@media (min-width: 300px) {
+  html {
+    background-size: fill;
+  }
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .random-color-box {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    padding: 10%;
+  }
+  h1 {
+    background-color: black;
+    color: lightgray;
+    margin: 0%;
+  }
+  .header {
+    background-color: black;
+
+    color: lightgray;
+    margin: 0%;
+  }
+  .slider-box {
+    background-color: black;
+
+    color: lightgray;
+    margin: 0%;
+  }
+  div {
+    margin: 0%;
+  }
+  p {
+    background-color: black;
+    opacity: 1;
+    margin-right: 7%;
+    margin-left: 7%;
+    font-size: 1.5rem;
+  }
+  button {
+    background-color: black;
+    color: lightgray;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 15%;
+    border: black;
+    font-size: 1.5rem;
+  }
+}

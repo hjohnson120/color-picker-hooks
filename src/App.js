@@ -18,11 +18,7 @@ export default function App(props) {
   console.log({ randomColor })
   return (
     <>
-      <main
-      // style={{
-      //   backgroundColor: `hsl(${hue},${saturation}%,${lightness}%)`
-      // }}
-      >
+      <main>
         <h1 className="header">Colors are Fun</h1>
         <section class="slider-box">
           <div>
@@ -34,7 +30,7 @@ export default function App(props) {
               min="0"
               max="360"
             />
-            <label for="hue">H</label>
+            <label>H</label>
           </div>
           <div>
             <input
@@ -45,7 +41,7 @@ export default function App(props) {
               min="0"
               max="100"
             />
-            <label for="hue">S</label>
+            <label>S</label>
           </div>
           <div>
             <input
@@ -56,7 +52,7 @@ export default function App(props) {
               min="0"
               max="100"
             />
-            <label for="hue">L</label>
+            <label>L</label>
           </div>
         </section>
         <h1>
