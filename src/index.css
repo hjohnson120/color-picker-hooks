@@ -49,7 +49,7 @@ button {
   border-radius: 50%;
 }
 
-/* @media (min-width: 300px) {
+@media (max-width: 500px) {
   html {
     background-size: fill;
   }
@@ -101,4 +101,4 @@ button {
     border-radius: 15%;
     font-size: 1.5rem;
   }
-} */
+}
