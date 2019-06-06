@@ -1,21 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
 :root {
   font: 16px / 1 sans-serif;
 }
 
 html {
   height: 100%;
+  background-image: url('./components/Images/colorful.jpg');
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-color: black;
 }
-
+.header {
+  font-family: 'Dancing Script', cursive;
+  font-size: 6rem;
+}
 body {
   margin: 0;
   min-height: 100%;
+  color: lightgray;
 }
 main {
   text-align: center;
 }
 h1 {
   margin: 0%;
-  padding: 5%;
+  padding: 2%;
+  margin-top: 2%;
+  color: lightgray;
 }
 main,
 #root,
@@ -24,10 +36,23 @@ html {
   height: 100%;
 }
 
-.slider-box {
+button {
+  background-color: lightgray;
+}
+
+.random-color-box {
+  padding: 2%;
+  margin-left: 46%;
+  margin-right: 46%;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+}
+
+/* .slider-box {
   border-width: 2px;
   border: solid;
   border-color: black;
   margin-left: 35%;
   margin-right: 35%;
-}
+} */

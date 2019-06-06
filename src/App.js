@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+// import color from '../Images/color.jpg'
 
 export default function App(props) {
   const [hue, updateHue] = useState(180)
@@ -18,11 +19,11 @@ export default function App(props) {
   return (
     <>
       <main
-        style={{
-          backgroundColor: `hsl(${hue},${saturation}%,${lightness}%)`
-        }}
+      // style={{
+      //   backgroundColor: `hsl(${hue},${saturation}%,${lightness}%)`
+      // }}
       >
-        <h1>Colors are Fun!</h1>
+        <h1 className="header">Colors are Fun</h1>
         <section class="slider-box">
           <div>
             <input
@@ -62,7 +63,13 @@ export default function App(props) {
           HSL:{hue}/{saturation}%/
           {lightness}%
         </h1>
-        <p>New Random Color Button</p>
+        <p
+          className="random-color-box"
+          style={{
+            backgroundColor: `hsl(${hue},${saturation}%,${lightness}%)`
+          }}
+        />
+        <p>Pick a Random Color</p>
         <button onClick={randomColor}>Select </button>
       </main>
     </>
